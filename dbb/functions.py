@@ -4,7 +4,7 @@ Created on 30 Mar 2017
 @author: liga
 '''
 from datetime import datetime
-import config as conf
+from dbb import config as conf
 import boto3
 from boto3.dynamodb.conditions import Key
 
