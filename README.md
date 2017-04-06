@@ -25,5 +25,18 @@ To install use pip install git+
         - eq(value)     =
         - between(low_value, high_value)
         - exists()
-        
+    example def scanAll():
+    "Returns whole table as python dictionary "
+    response = table(connect()).scan(Select='ALL_ATTRIBUTES')
+    printResp(response)
+    return response
+    
+	example  scan("number", "eq", 16, None) returns Number of station equal to 16 
+
+## To scan whole table use:
+### scanAll()
+
+	returns contents of whole table as a python dictionary
+
+	
 
