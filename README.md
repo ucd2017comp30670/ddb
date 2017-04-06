@@ -14,6 +14,8 @@ To install use pip install git+
     primary key = "name"
     sort_key = time_stamp
     
+    example querry("JAMES STREET EAST",1490979662000)
+    
 ## To scan the table for specific attribute values use:
 ### functions.scan(key, condition, value, value2)
 

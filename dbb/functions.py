@@ -36,7 +36,7 @@ def querry(primary_key, sort_key):
 
     response = table(connect()).query(
         KeyConditionExpression=Key('name').eq(primary_key) & Key(
-            "time_stamp").between(sort_key),
+            "time_stamp").eq(sort_key),
     )
     print(response)
     printResp(response)
@@ -79,6 +79,7 @@ def scanAll():
     return response
 
 
-#scan("number", "eq", 16, None)
+scan("name", "eq", "JAMES STREET EAST", None)
+querry("JAMES STREET EAST", 1490979662000)
 # scanAll()
 # printResp(response)
