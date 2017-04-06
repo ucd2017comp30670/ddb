@@ -72,4 +72,13 @@ def scan(key, condition, value, value2):
     return response
 
 
+def scanAll():
+    "Returns whole table as python dictionary "
+    response = table(connect()).scan(Select='ALL_ATTRIBUTES')
+    printResp(response)
+    return response
+
+
 #scan("number", "eq", 16, None)
+# scanAll()
+# printResp(response)
