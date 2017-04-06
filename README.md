@@ -11,6 +11,9 @@ To install use pip install git+
     Querry finds rows with specified primary key and sort key values
     is faster because doesn't scan through the whole table, returns python dictionary
     
+    primary key = "name"
+    sort_key = time_stamp
+    
 ## To scan the table for specific attribute values use:
 ### functions.scan(key, condition, value, value2)
 
@@ -37,6 +40,8 @@ To install use pip install git+
 ### scanAll()
 
 	returns contents of whole table as a python dictionary
+	
+	
 
 	
 
